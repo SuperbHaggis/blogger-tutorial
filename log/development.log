@@ -3865,3 +3865,1950 @@ Processing by ArticlesController#show as HTML
 Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.5ms | Allocations: 8290)
 
 
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/turner/odin-project/projects/blogger-tutorial/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/turner/odin-project/projects/blogger-tutorial/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/turner/odin-project/projects/blogger-tutorial/config/environment.rb:5)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SorceryCore (20201013124336)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "authors" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar NOT NULL, "email" varchar NOT NULL, "crypted_password" varchar NOT NULL, "salt" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_authors_on_email" ON "authors" ("email")[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201013124336"]]
+  [1m[35m (72.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/turner/odin-project/projects/blogger-tutorial/config/environment.rb:5)
+Started GET "/authors" for 127.0.0.1 at 2020-10-13 16:50:41 +0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/authors"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/turner/odin-project/projects/blogger-tutorial/config/environment.rb:5)
+Started GET "/authors" for 127.0.0.1 at 2020-10-13 16:51:39 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:17
+  Rendered authors/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1511)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 0.4ms | Allocations: 9863)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2020-10-13 16:51:47 +0400
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 28.2ms | Allocations: 3298)
+  Rendered authors/new.html.erb within layouts/application (Duration: 30.5ms | Allocations: 3646)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 43.8ms | ActiveRecord: 1.7ms | Allocations: 11980)
+
+
+Started POST "/authors" for 127.0.0.1 at 2020-10-13 16:52:53 +0400
+Processing by AuthorsController#create as HTML
+  Parameters: {"authenticity_token"=>"NR5wSW2pZIJvYquw3mFJQVQt8b8AX4Be/ih3T3JvU0fr2so/yRc0NE/Es9dOPeBeYv44RMj/LpASOmaCSnWZXw==", "author"=>{"username"=>"admin", "email"=>"admin@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Author"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:30:in `block in create'
+  [1m[36mAuthor Create (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("username", "email", "crypted_password", "salt", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "admin"], ["email", "admin@example.com"], ["crypted_password", "$2a$10$FRVZpF/QOwb4uJoIpTLbneSRnmcFbFFxG0a5PPOP.MtkNe9sBjQdm"], ["salt", "SK4m9VAB7yZu7s8yt_K3"], ["created_at", "2020-10-13 12:52:53.967752"], ["updated_at", "2020-10-13 12:52:53.967752"]]
+  ↳ app/controllers/authors_controller.rb:30:in `block in create'
+  [1m[35m (64.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/authors/1
+Completed 302 Found in 137ms (ActiveRecord: 65.0ms | Allocations: 4211)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2020-10-13 16:52:54 +0400
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:67:in `set_author'
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 314)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 5027)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2020-10-13 16:53:49 +0400
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:67:in `set_author'
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 257)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 5318)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2020-10-13 16:54:01 +0400
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:67:in `set_author'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1136)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Author with 'id'=index):
+  
+app/controllers/authors_controller.rb:67:in `set_author'
+Started GET "/authors/" for 127.0.0.1 at 2020-10-13 16:54:06 +0400
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:17
+  Rendered authors/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1067)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 4792)
+
+
+Started GET "/authors/" for 127.0.0.1 at 2020-10-13 16:54:24 +0400
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:15
+  Rendered authors/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1065)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 5588)
+
+
+Started GET "/authors/" for 127.0.0.1 at 2020-10-13 16:54:33 +0400
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:15
+  Rendered authors/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 5606)
+
+
+Started GET "/authors/" for 127.0.0.1 at 2020-10-13 16:56:32 +0400
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:15
+  Rendered authors/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 780)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 4357)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-10-13 16:56:39 +0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 7406)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 16.2ms | ActiveRecord: 0.7ms | Allocations: 14220)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-10-13 16:56:47 +0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1228)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.2ms | Allocations: 5860)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/turner/odin-project/projects/blogger-tutorial/config/environment.rb:5)
+Started GET "/articles" for 127.0.0.1 at 2020-10-13 17:02:13 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 6971)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 98ms (Views: 93.5ms | ActiveRecord: 0.2ms | Allocations: 26654)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-10-13 17:02:15 +0400
+Processing by AuthorSessionsController#new as HTML
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 549)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 4790)
+
+
+Started POST "/author_sessions" for 127.0.0.1 at 2020-10-13 17:02:20 +0400
+Processing by AuthorSessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"bcxaIMWwGmXr488Rrj6Bi9MquO7jebAX1ztx55oyxKuQa5IKkRzd5y2Jhm0UiSJpLvzhxpbt+jB5Dq+f2be0aw==", "email"=>"admin", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."email" = 'admin' ORDER BY "authors"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/author_sessions_controller.rb:6:in `create'
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 292)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 15.7ms | ActiveRecord: 0.2ms | Allocations: 5316)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-10-13 17:02:23 +0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1066)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.3ms | Allocations: 4747)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/turner/odin-project/projects/blogger-tutorial/config/environment.rb:5)
+Started GET "/articles" for 127.0.0.1 at 2020-10-13 17:02:37 +0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 18.7ms | Allocations: 7889)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 73ms (Views: 59.6ms | ActiveRecord: 1.4ms | Allocations: 26685)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-10-13 17:02:39 +0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1072)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 4751)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-10-13 17:02:40 +0400
+Processing by AuthorSessionsController#new as HTML
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 569)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 4821)
+
+
+Started POST "/author_sessions" for 127.0.0.1 at 2020-10-13 17:02:47 +0400
+Processing by AuthorSessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"O9DuPqJiA6qNmbWgr27R6pjuLxgZl6bjooXywLS/2QvGdyYU9s7EKEvz/NwV2XIIZTh2MGwD7MQMsCy49zqpyw==", "email"=>"admin", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."email" = 'admin' ORDER BY "authors"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/author_sessions_controller.rb:6:in `create'
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 293)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 4.8ms | ActiveRecord: 1.3ms | Allocations: 5744)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-10-13 17:02:57 +0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1076)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 4768)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2020-10-13 17:03:00 +0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9:in `show'
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:24
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:25
+  Rendered collection of articles/_comment.html.erb [4 times] (Duration: 1.8ms | Allocations: 1545)
+  Rendered comments/_form.html.erb (Duration: 2.0ms | Allocations: 1223)
+  Rendered articles/show.html.erb within layouts/application (Duration: 24.3ms | Allocations: 15458)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 27.8ms | ActiveRecord: 2.1ms | Allocations: 24796)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-10-13 17:03:03 +0400
+Processing by AuthorSessionsController#new as HTML
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 304)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 3971)
+
+
+Started POST "/author_sessions" for 127.0.0.1 at 2020-10-13 17:03:11 +0400
+Processing by AuthorSessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"qPJnqhCsLK983RHW2u6Y23is+ZGYbtrjIpv5Bpb9RSJVVa+ARADrLbq3WKpgWTs5hXqgue36kMSMrid+1Xg14g==", "email"=>"admin", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."email" = 'admin' ORDER BY "authors"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/author_sessions_controller.rb:6:in `create'
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 292)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 10.1ms | ActiveRecord: 0.3ms | Allocations: 4730)
+
+
+Started GET "/author_sessions" for 127.0.0.1 at 2020-10-13 17:04:31 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/author_sessions"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/author_sessions" for 127.0.0.1 at 2020-10-13 17:05:24 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/author_sessions"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-10-13 17:05:28 +0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 7433)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 17.4ms | ActiveRecord: 0.8ms | Allocations: 14619)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-10-13 17:05:31 +0400
+Processing by AuthorSessionsController#new as HTML
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 539)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 4779)
+
+
+Started POST "/author_sessions" for 127.0.0.1 at 2020-10-13 17:05:35 +0400
+Processing by AuthorSessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"cEYHvN2NL2Vdrw2uZhaTOWDpQ9S20z6A1mkdPFcNCDSN4c+WiSHo55vFRNLcoTDbnT8a/MNHdKd4XMNEFIh49A==", "email"=>"admin", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."email" = 'admin' ORDER BY "authors"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/author_sessions_controller.rb:6:in `create'
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 292)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 0.9ms | Allocations: 5584)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/turner/odin-project/projects/blogger-tutorial/config/environment.rb:5)
+Started GET "/author_sessions" for 127.0.0.1 at 2020-10-13 17:06:26 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/author_sessions"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/turner/odin-project/projects/blogger-tutorial/config/environment.rb:5)
+Started GET "/author_sessions" for 127.0.0.1 at 2020-10-13 17:06:28 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/author_sessions"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/login" for 127.0.0.1 at 2020-10-13 17:07:14 +0400
+Processing by AuthorSessionsController#new as HTML
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 305)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 4082)
+
+
+Started GET "/logout" for 127.0.0.1 at 2020-10-13 17:07:18 +0400
+Processing by AuthorSessionsController#destroy as HTML
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 337)
+
+
+Started GET "/authors" for 127.0.0.1 at 2020-10-13 17:07:18 +0400
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:15
+  Rendered authors/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 6079)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.7ms | Allocations: 10888)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-10-13 17:07:21 +0400
+Processing by AuthorSessionsController#new as HTML
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 304)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 3972)
+
+
+Started POST "/author_sessions" for 127.0.0.1 at 2020-10-13 17:07:27 +0400
+Processing by AuthorSessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"JWAAWQGH7Q/wKGPCH4Gu6dov+P74M3R5WbLt+6GZDnHYx8hzVSsqjTZCKr6lNg0LJ/mh1o2nPl73hzOD4hx+sQ==", "email"=>"admin", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."email" = 'admin' ORDER BY "authors"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/author_sessions_controller.rb:6:in `create'
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 292)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.3ms | Allocations: 4769)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2020-10-13 17:07:47 +0400
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/turner/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.3.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/turner/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-6.0.3.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [58 times] (Duration: 14.0ms | Allocations: 7945)
+  Rendered /home/turner/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-6.0.3.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.0ms | Allocations: 703)
+  Rendered /home/turner/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.3.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 25.3ms | Allocations: 13182)
+Completed 200 OK in 34ms (Views: 27.5ms | ActiveRecord: 0.0ms | Allocations: 14541)
+
+
+Started GET "/author_sessions" for 127.0.0.1 at 2020-10-13 17:09:01 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/author_sessions"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/author_sessions" for 127.0.0.1 at 2020-10-13 17:09:02 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/author_sessions"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/turner/odin-project/projects/blogger-tutorial/config/environment.rb:5)
+Started GET "/author_sessions" for 127.0.0.1 at 2020-10-13 17:09:16 +0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/author_sessions"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/login" for 127.0.0.1 at 2020-10-13 17:10:17 +0400
+Processing by AuthorSessionsController#new as HTML
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 588)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 8939)
+
+
+Started POST "/author_sessions" for 127.0.0.1 at 2020-10-13 17:10:23 +0400
+Processing by AuthorSessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"gGMfzQWjAGWpc/MD8KmL3/esvYmey+iLtYIZ6ZFTiHdep6W7oR1Q04nV62Rg9SLAwX90clZrRkVZkAgkqUlCbw==", "email"=>"admin", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."email" = 'admin' ORDER BY "authors"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/author_sessions_controller.rb:6:in `create'
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 295)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 10.2ms | ActiveRecord: 1.0ms | Allocations: 6101)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-10-13 17:10:27 +0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 20.2ms | Allocations: 7571)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 28.0ms | ActiveRecord: 0.8ms | Allocations: 14501)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-10-13 17:13:43 +0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1238)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.1ms | Allocations: 5984)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-10-13 17:13:44 +0400
+Processing by AuthorSessionsController#new as HTML
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 536)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 4773)
+
+
+Started POST "/author_sessions" for 127.0.0.1 at 2020-10-13 17:13:55 +0400
+Processing by AuthorSessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"JwIMou0QIMXyyWiLEO5ittR04lEdnMPqfpnVv3+RWOrapcSIubznRzSjIfeqWcFUKaK7eWgIic3QrAvHPBQoKg==", "email"=>"admin@example.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."email" = 'admin@example.com' ORDER BY "authors"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/author_sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 158ms (ActiveRecord: 0.3ms | Allocations: 5505)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-10-13 17:13:55 +0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1066)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.4ms | Allocations: 5851)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-10-15 13:25:09 +0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1086)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.5ms | Allocations: 5418)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2020-10-15 13:28:19 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+NoMethodError (undefined method `before_filter' for AuthorsController:Class
+Did you mean?  before_action):
+  
+app/controllers/authors_controller.rb:15:in `<class:AuthorsController>'
+app/controllers/authors_controller.rb:1:in `<main>'
+Started GET "/authors/new" for 127.0.0.1 at 2020-10-15 13:29:30 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthorsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "authors"[0m
+  ↳ app/controllers/authors_controller.rb:16:in `zero_authors_or_authenticated'
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:16:in `zero_authors_or_authenticated'
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 4.2ms | Allocations: 3185)
+  Rendered authors/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3536)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 22.6ms | ActiveRecord: 1.0ms | Allocations: 14499)
+
+
+Started GET "/logout" for 127.0.0.1 at 2020-10-15 13:29:32 +0400
+Processing by AuthorSessionsController#destroy as HTML
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/author_sessions_controller.rb:15:in `destroy'
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 946)
+
+
+Started GET "/authors" for 127.0.0.1 at 2020-10-15 13:29:32 +0400
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:15
+  Rendered authors/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.3ms | Allocations: 4938)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2020-10-15 13:29:36 +0400
+Processing by AuthorsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "authors"[0m
+  ↳ app/controllers/authors_controller.rb:16:in `zero_authors_or_authenticated'
+Redirected to http://localhost:3000/
+Filter chain halted as :zero_authors_or_authenticated rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 921)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:29:36 +0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 7009)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 15.8ms | ActiveRecord: 0.7ms | Allocations: 13073)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Destroy (0.3ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 1]]
+  [1m[35m (75.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/authors/new" for 127.0.0.1 at 2020-10-15 13:30:17 +0400
+Processing by AuthorsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "authors"[0m
+  ↳ app/controllers/authors_controller.rb:16:in `zero_authors_or_authenticated'
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 2.2ms | Allocations: 1104)
+  Rendered authors/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1191)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 5480)
+
+
+Started POST "/authors" for 127.0.0.1 at 2020-10-15 13:30:29 +0400
+Processing by AuthorsController#create as HTML
+  Parameters: {"authenticity_token"=>"eMpFdyAalGuunKI3f1uOS7hCOfcbr2PWSScBFxIAC8uhdx7aDxo+i3JAkO6jCUK0tb9Y5Q3RlnPjri77cS9HgQ==", "author"=>{"username"=>"admin", "email"=>"admin@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Author"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "authors"[0m
+  ↳ app/controllers/authors_controller.rb:16:in `zero_authors_or_authenticated'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:37:in `block in create'
+  [1m[36mAuthor Create (0.4ms)[0m  [1m[32mINSERT INTO "authors" ("username", "email", "crypted_password", "salt", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "admin"], ["email", "admin@example.com"], ["crypted_password", "$2a$10$3xXlpo7Pd8cqW0KhGAzjU./tG0aR0F/i9qSGkWSVHouJ8UUZ2ayai"], ["salt", "Q2M5NuKy7v8BCztsRs1K"], ["created_at", "2020-10-15 09:30:29.332136"], ["updated_at", "2020-10-15 09:30:29.332136"]]
+  ↳ app/controllers/authors_controller.rb:37:in `block in create'
+  [1m[35m (60.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:37:in `block in create'
+Redirected to http://localhost:3000/authors/2
+Completed 302 Found in 140ms (ActiveRecord: 60.9ms | Allocations: 4749)
+
+
+Started GET "/authors/2" for 127.0.0.1 at 2020-10-15 13:30:29 +0400
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1449)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2047)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Username:</strong>
+    5:   <%= @author.username %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/authors/show.html.erb:5
+Started GET "/authors/2" for 127.0.0.1 at 2020-10-15 13:31:12 +0400
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1421)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2618)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Email:</strong>
+    5:   <%= @author.email %>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit', edit_author_path(@author) %> |
+  
+app/views/authors/show.html.erb:5
+Started GET "/authors/2" for 127.0.0.1 at 2020-10-15 13:31:23 +0400
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1442)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2639)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Username:</strong>
+    5:   <%= @author.username %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/authors/show.html.erb:5
+Started POST "/authors" for 127.0.0.1 at 2020-10-15 13:32:02 +0400
+Processing by AuthorsController#create as HTML
+  Parameters: {"authenticity_token"=>"eMpFdyAalGuunKI3f1uOS7hCOfcbr2PWSScBFxIAC8uhdx7aDxo+i3JAkO6jCUK0tb9Y5Q3RlnPjri77cS9HgQ==", "author"=>{"username"=>"admin", "email"=>"admin@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Author"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "authors"[0m
+  ↳ app/controllers/authors_controller.rb:16:in `zero_authors_or_authenticated'
+Redirected to http://localhost:3000/
+Filter chain halted as :zero_authors_or_authenticated rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 976)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:32:02 +0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1233)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 5826)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-10-15 13:32:08 +0400
+Processing by AuthorSessionsController#new as HTML
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 536)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 4769)
+
+
+Started POST "/author_sessions" for 127.0.0.1 at 2020-10-15 13:32:14 +0400
+Processing by AuthorSessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"431rlHF42XXyc1ov48zxVffPw2k/oo62xMsf1fa1m/FMllyjrJr6gQFDUKwcnXwMQ8Kw7tD5BLZNpCmrQ1JisQ==", "email"=>"admin@example.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."email" = 'admin@example.com' ORDER BY "authors"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/author_sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 135ms (ActiveRecord: 0.3ms | Allocations: 1289)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-10-15 13:32:14 +0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1066)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.3ms | Allocations: 5400)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2020-10-15 13:39:13 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:11:in `show'
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:12
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/show.html.erb:18
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:25
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:26
+  Rendered collection of articles/_comment.html.erb [4 times] (Duration: 1.2ms | Allocations: 466)
+  Rendered comments/_form.html.erb (Duration: 2.4ms | Allocations: 942)
+  Rendered articles/show.html.erb within layouts/application (Duration: 26.6ms | Allocations: 19402)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 35.4ms | ActiveRecord: 1.8ms | Allocations: 37551)
+
+
+Started GET "/logout" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by AuthorSessionsController#destroy as HTML
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/author_sessions_controller.rb:15:in `destroy'
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 946)
+
+
+Started GET "/authors" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by AuthorsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 428)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 362)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 353)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 359)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 360)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 364)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 363)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 358)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 366)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 356)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 353)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 363)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 357)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 361)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 357)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 360)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 363)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 363)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 355)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 364)
+
+
+Started GET "/logout" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by AuthorSessionsController#destroy as HTML
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/authors" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by AuthorsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 356)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 343)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 348)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 341)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 352)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 342)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 343)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 341)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 343)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 348)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:23 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:24 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:24 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 355)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 342)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 353)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 340)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 348)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 348)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:25 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 342)
+
+
+Started GET "/index" for 127.0.0.1 at 2020-10-15 13:39:29 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/articles" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 348)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 339)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 343)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 341)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 348)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 344)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 342)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:34 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 344)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:35 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 344)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:35 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:35 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 340)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 343)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 352)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 343)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 344)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 340)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 339)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 343)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 348)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 340)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 340)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:39:47 +0400
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 343)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:40:06 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 7393)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 15.4ms | ActiveRecord: 0.8ms | Allocations: 14478)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2020-10-15 13:40:08 +0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9:in `show'
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:24
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:25
+  Rendered collection of articles/_comment.html.erb [4 times] (Duration: 1.0ms | Allocations: 446)
+  Rendered comments/_form.html.erb (Duration: 1.1ms | Allocations: 667)
+  Rendered articles/show.html.erb within layouts/application (Duration: 14.1ms | Allocations: 10799)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 17.1ms | ActiveRecord: 1.7ms | Allocations: 19459)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2020-10-15 13:40:20 +0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9:in `show'
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:12
+  Rendered articles/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1648)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 6952)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2020-10-15 13:40:45 +0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9:in `show'
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:26
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:27
+  Rendered collection of articles/_comment.html.erb [4 times] (Duration: 1.0ms | Allocations: 441)
+  Rendered comments/_form.html.erb (Duration: 1.0ms | Allocations: 576)
+  Rendered articles/show.html.erb within layouts/application (Duration: 8.8ms | Allocations: 4678)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.5ms | Allocations: 9973)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-10-15 13:41:03 +0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1228)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.1ms | Allocations: 5051)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-10-15 13:51:40 +0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1258)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.3ms | Allocations: 6006)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-10-15 13:51:44 +0400
+Processing by AuthorSessionsController#new as HTML
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 537)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 4734)
+
+
+Started POST "/author_sessions" for 127.0.0.1 at 2020-10-15 13:51:49 +0400
+Processing by AuthorSessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"nGPnQWF8T5ONR4nLmj9/KrBPtVOJNZ+4LneXWJAohAg2jgbvQCW/HgvVt1sbnRviMfU1fMCu+MjWlyftwC9AvQ==", "email"=>"admin@example.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."email" = 'admin@example.com' ORDER BY "authors"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/author_sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 153ms (ActiveRecord: 0.7ms | Allocations: 6368)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-15 13:51:49 +0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1882)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.3ms | Allocations: 5587)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2020-10-15 13:51:50 +0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 2.7ms | Allocations: 1729)
+  Rendered articles/new.html.erb within layouts/application (Duration: 20.9ms | Allocations: 2032)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 47ms (Views: 27.3ms | ActiveRecord: 0.2ms | Allocations: 6495)
+
+
